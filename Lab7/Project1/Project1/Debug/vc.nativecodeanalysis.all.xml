@@ -1,0 +1,1205 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>21</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "node". </DESCRIPTION>
+    <FUNCTION>AddNodeL</FUNCTION>
+    <DECORATED>AddNodeL</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"node" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"node" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "node-&gt;question":  доступный для записи объем равен "(unsigned int)n*sizeof(char *)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>AddNodeL</FUNCTION>
+    <DECORATED>AddNodeL</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;n")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;n")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "node-&gt;question" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "node-&gt;question". </DESCRIPTION>
+    <FUNCTION>AddNodeL</FUNCTION>
+    <DECORATED>AddNodeL</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"node-&gt;question" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;n")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"node-&gt;question" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>28</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "node-&gt;question":  доступный для чтения объем равен "(unsigned int)n*sizeof(char *)" байт, однако считать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>AddNodeL</FUNCTION>
+    <DECORATED>AddNodeL</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>26</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>26</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;n")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>26</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>26</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;n")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"i" является аргументом ввода-вывода для "strcpy" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h: 133)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "node-&gt;question" (за пределами доступного для чтения диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>28</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"(node-&gt;question)[i]" может быть равен "0":  это не соответствует спецификации функции "strcpy". </DESCRIPTION>
+    <FUNCTION>AddNodeL</FUNCTION>
+    <DECORATED>AddNodeL</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>26</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>26</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;n")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"i" является аргументом ввода-вывода для "strcpy" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h: 133)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"(node-&gt;question)[i]" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "strcpy"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"s0[((*n))-1]" может быть равен "0":  это не соответствует спецификации функции "strcpy". </DESCRIPTION>
+    <FUNCTION>AddStr</FUNCTION>
+    <DECORATED>AddStr</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>51</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>52</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>55</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>55</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "s0":  доступный для записи объем равен "(unsigned int)(*n)*sizeof(char *)" байт, однако записать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>AddStr</FUNCTION>
+    <DECORATED>AddStr</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>51</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>52</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s0" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;((*n))")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>55</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" может быть равно 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;((*n))")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>55</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "s0" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"s0[i]" может быть равен "0":  это не соответствует спецификации функции "strcpy". </DESCRIPTION>
+    <FUNCTION>AddStr</FUNCTION>
+    <DECORATED>AddStr</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>51</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>52</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"i" равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;((*n))")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>55</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в эту ветвь (предполагается "i&lt;((*n))-1")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>57</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"i" является аргументом ввода-вывода для "strcpy" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h: 133)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>57</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s0[i]" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "strcpy"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "s0":  доступный для чтения объем равен "(unsigned int)(*n)*sizeof(char *)" байт, однако считать можно только "8" байт.</DESCRIPTION>
+    <FUNCTION>AddStr</FUNCTION>
+    <DECORATED>AddStr</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>51</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>52</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s0" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>55</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>55</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "s0" (за пределами доступного для чтения диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "s0". </DESCRIPTION>
+    <FUNCTION>AddStr</FUNCTION>
+    <DECORATED>AddStr</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>51</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>52</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s0" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>53</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s0" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Использование неинициализированной памяти "**tail".</DESCRIPTION>
+    <FUNCTION>ClearL</FUNCTION>
+    <DECORATED>ClearL</DECORATED>
+    <FUNCLINE>121</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>123</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>125</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>126</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>123</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"**tail" может быть равно NULL (Продолжить этот цикл)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>125</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"**tail" используется, но, возможно, не инициализировано</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>148</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6064</DEFECTCODE>
+    <DESCRIPTION>Пропущен целочисленный аргумент "scanf_s", соответствующий спецификатору преобразования "2".</DESCRIPTION>
+    <FUNCTION>AddQuestion</FUNCTION>
+    <DECORATED>AddQuestion</DECORATED>
+    <FUNCLINE>133</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Возвращаемое значение пропущено: "getchar".</DESCRIPTION>
+    <FUNCTION>AddQuestion</FUNCTION>
+    <DECORATED>AddQuestion</DECORATED>
+    <FUNCLINE>133</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"s" может быть равен "0":  это не соответствует спецификации функции "strcat". </DESCRIPTION>
+    <FUNCTION>AddQuestion</FUNCTION>
+    <DECORATED>AddQuestion</DECORATED>
+    <FUNCLINE>133</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>135</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>136</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>137</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>138</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>139</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>142</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"s" является аргументом ввода-вывода для "strcat" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h: 90)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "strcat"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>144</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"s" может быть равен "0":  это не соответствует спецификации функции "strcmp". Самое раннее расположение, где это могло произойти, см. в строке 143</DESCRIPTION>
+    <FUNCTION>AddQuestion</FUNCTION>
+    <DECORATED>AddQuestion</DECORATED>
+    <FUNCLINE>133</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>135</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>136</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>137</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>138</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>139</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>142</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"s" является аргументом ввода-вывода для "strcat" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h: 90)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"s" является входными данными для "strcmp" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h:100)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "strcmp("//-----//?", s)!=0" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+        <FILENAME>source.c</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"s" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "strcmp"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>e:\c projects\lab7\project1\project1</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Возвращаемое значение пропущено: "_getch".</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>153</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

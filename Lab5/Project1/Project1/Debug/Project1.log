@@ -1,0 +1,6 @@
+﻿  Source.c
+e:\c projects\lab5\project1\project1\source.c(162): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  e:\c projects\lab5\project1\project1\source.c(162): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  e:\c projects\lab5\project1\project1\source.c(162): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  e:\c projects\lab5\project1\project1\source.c(162): note: этот аргумент используется в качестве размера буфера
+  Project1.vcxproj -> E:\C projects\Lab5\Project1\Debug\Project1.exe

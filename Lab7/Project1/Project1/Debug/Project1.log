@@ -1,0 +1,11 @@
+﻿  Source.c
+e:\c projects\lab7\project1\project1\source.c(148): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
+e:\c projects\lab7\project1\project1\source.c(154): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  e:\c projects\lab7\project1\project1\source.c(154): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  e:\c projects\lab7\project1\project1\source.c(154): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  e:\c projects\lab7\project1\project1\source.c(154): note: этот аргумент используется в качестве размера буфера
+e:\c projects\lab7\project1\project1\source.c(211): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+  e:\c projects\lab7\project1\project1\source.c(211): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  e:\c projects\lab7\project1\project1\source.c(211): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  e:\c projects\lab7\project1\project1\source.c(211): note: этот аргумент используется в качестве размера буфера
+  Project1.vcxproj -> E:\C projects\Lab7\Project1\Debug\Project1.exe

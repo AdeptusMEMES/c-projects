@@ -1,0 +1,6 @@
+﻿  Source.c
+e:\c projects\lab2\project2.2\project2.2\source.c(35): warning C4098: sinrec: функция типа "void", возвращающая значение
+e:\c projects\lab2\project2.2\project2.2\source.c(39): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+e:\c projects\lab2\project2.2\project2.2\source.c(52): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+e:\c projects\lab2\project2.2\project2.2\source.c(58): warning C4098: siniter: функция типа "void", возвращающая значение
+  Project2.2.vcxproj -> E:\C projects\Lab2\Project2.2\Debug\Project2.2.exe
